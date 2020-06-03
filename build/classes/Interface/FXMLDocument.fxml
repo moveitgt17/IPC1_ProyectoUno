@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXClippedPane?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="490.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyectounoipc1_junio201800624.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutX="253.0" layoutY="46.0" opacity="0.83" prefHeight="308.0" prefWidth="213.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXClippedPane />
+            <JFXTextField fx:id="userText" focusColor="#6e86c9" layoutX="40.0" layoutY="69.0" prefHeight="29.0" prefWidth="140.0" promptText="username" unFocusColor="#848a8d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXTextField>
+            <JFXPasswordField fx:id="userPassword" focusColor="#6988d0" layoutX="40.0" layoutY="130.0" prefHeight="29.0" prefWidth="140.0" promptText="password" unFocusColor="#787780">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </JFXPasswordField>
+            <JFXButton fx:id="getIn" layoutX="37.0" layoutY="208.0" onAction="#getIn" onMouseClicked="#openAdmin" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #E45652;" text="Ingresar" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="72.0" layoutY="14.0" prefHeight="27.0" prefWidth="76.0" text="SIGN IN" textFill="#c6c2c2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="400.0" fitWidth="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../proyectounoipc1_junio201800624/Images/fond.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="118.0" opacity="0.78" prefHeight="82.0" prefWidth="345.0" text="Welcome to " textFill="#c6bbbb">
+         <font>
+            <Font name="Agency FB" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="176.0" opacity="0.74" prefHeight="74.0" prefWidth="194.0" text="CINESAC" textFill="#d7d0d0">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="250.0" text="The magic of cinema..." textFill="#aea2a2" />
+   </children>
+</AnchorPane>
